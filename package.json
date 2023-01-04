@@ -17,7 +17,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "inj-ts": "bin/inj-ts"
+    "inj-ts": "bin/inj-ts.js"
   },
   "scripts": {
     "start": "yarn run build && node dist/index.js",
