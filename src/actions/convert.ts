@@ -1,15 +1,10 @@
 import { getEthereumAddress, getInjectiveAddress } from "@injectivelabs/sdk-ts";
 import { AddressConverter } from "../types/index.js";
+import { validateAddress } from "../utils/validations.js";
 
 export const injToEth = (address: string): string => {
   const convert = (address: string) => {
-    if (!address.startsWith("inj")) {
-      throw new Error("You have entered an invalid address");
-    }
-
-    if (address.length !== 42) {
-      throw new Error("You have entered an invalid address");
-    }
+    validateAddress(address);
 
     return getEthereumAddress(address);
   };
@@ -19,13 +14,7 @@ export const injToEth = (address: string): string => {
 
 export const injToSubaccount = (address: string): string => {
   const convert = (address: string) => {
-    if (!address.startsWith("inj")) {
-      throw new Error("You have entered an invalid address");
-    }
-
-    if (address.length !== 42) {
-      throw new Error("You have entered an invalid address");
-    }
+    validateAddress(address);
 
     const ethAddress = getEthereumAddress(address);
     const suffix = "0".repeat(24);

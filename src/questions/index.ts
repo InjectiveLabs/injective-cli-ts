@@ -1,4 +1,4 @@
-import { Action, AddressConverter } from "../types/index.js";
+import { Action, AddressConverter, Calculator, Query } from "../types/index.js";
 
 export const INQUIRER_MAIN_PROMPT = {
   actions: [
@@ -11,11 +11,33 @@ export const INQUIRER_MAIN_PROMPT = {
   ],
 };
 
+export const INQUIRER_QUERY_PROMPT = {
+  query: [
+    {
+      type: "list",
+      name: Action.query,
+      message: "Choose the query you want to perform",
+      choices: Object.values(Query),
+    },
+  ],
+};
+
+export const INQUIRER_CALCULATOR_PROMPT = {
+  calculator: [
+    {
+      type: "list",
+      name: Action.calculator,
+      message: "Choose the calculation you want to perform",
+      choices: Object.values(Calculator),
+    },
+  ],
+};
+
 export const INQUIRER_CONVERT_PROMPT = {
   converters: [
     {
       type: "list",
-      name: "convert",
+      name: Action.convert,
       message: "Choose the converter you want to use",
       choices: Object.values(AddressConverter),
     },
@@ -27,7 +49,7 @@ export const INQUIRER_CONVERT_ADDRESS_PROMPT = {
     {
       type: "input",
       name: "address",
-      message: "Enter the address you want to convert",
+      message: "Enter your address",
     },
   ],
 };

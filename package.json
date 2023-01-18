@@ -1,6 +1,6 @@
 {
   "name": "@injectivelabs/inj-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple CLI tool for Injective and its services.",
   "license": "Apache-2.0",
   "author": "@InjectiveLabs",
@@ -28,9 +28,12 @@
     "build:publish": "yarn run build && yarn publish"
   },
   "dependencies": {
-    "@injectivelabs/networks": "^1.0.55",
-    "@injectivelabs/sdk-ts": "^1.0.327",
-    "@injectivelabs/ts-types": "^1.0.18",
+    "@injectivelabs/networks": "^1.0.73",
+    "@injectivelabs/sdk-ts": "^1.0.367",
+    "@injectivelabs/token-metadata": "^1.0.110",
+    "@injectivelabs/token-utils": "^1.0.67",
+    "@injectivelabs/ts-types": "^1.0.28",
+    "@injectivelabs/utils": "^1.0.63",
     "@types/fs-extra": "^9.0.13",
     "dotenv": "^16.0.0",
     "figlet": "^1.5.2",

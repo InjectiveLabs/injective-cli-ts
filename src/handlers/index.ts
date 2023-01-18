@@ -1,6 +1,10 @@
 import { Action, Answer } from "../types/index.js";
 import { throwAndExit } from "../utils/errors.js";
-import { handleConvertAction, handleQueryAction } from "./inquirer.js";
+import {
+  handleCalculatorAction,
+  handleConvertAction,
+  handleQueryAction,
+} from "./inquirer.js";
 
 /**
  * The main handler when we are prompting the user to select an action
@@ -15,6 +19,8 @@ export const handleInquirer = async (answer: Answer): Promise<void> => {
       return handleConvertAction();
     case Action.query:
       return handleQueryAction();
+    case Action.calculator:
+      return handleCalculatorAction();
     default:
       throwAndExit(`Action ${answer.action} is not supported`);
   }
@@ -29,6 +35,8 @@ export const handleAction = async (action: Action): Promise<void> => {
       return handleConvertAction();
     case Action.query:
       return handleQueryAction();
+    case Action.calculator:
+      return handleCalculatorAction();
     default:
       throwAndExit(`Action ${action} is not supported`);
   }

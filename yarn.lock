@@ -661,11 +661,6 @@
     crc-32 "^1.2.0"
     ethereumjs-util "^7.1.5"
 
-"@ethereumjs/rlp@^4.0.0-beta.2":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@ethereumjs/rlp/-/rlp-4.0.0.tgz#66719891bd727251a7f233f9ca80212d1994f8c8"
-  integrity sha512-LM4jS5n33bJN60fM5EC8VeyhUgga6/DjCPBV2vWjnfVtobqtOiNC4SQ1MRFqyBSmJGGdB533JZWewyvlcdJtkQ==
-
 "@ethereumjs/tx@3.5.2":
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/@ethereumjs/tx/-/tx-3.5.2.tgz#197b9b6299582ad84f9527ca961466fce2296c1c"
@@ -673,15 +668,6 @@
   dependencies:
     "@ethereumjs/common" "^2.6.4"
     ethereumjs-util "^7.1.5"
-
-"@ethereumjs/util@^8.0.0":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@ethereumjs/util/-/util-8.0.3.tgz#410c2dc8c6d519b29f1a471aa9b9df9952e41239"
-  integrity sha512-0apCbwc8xAaie6W7q6QyogfyRS2BMU816a8KwpnpRw9Qrc6Bws+l7J3LfCLMt2iL6Wi8CYb0B29AeIr2N4vHnw==
-  dependencies:
-    "@ethereumjs/rlp" "^4.0.0-beta.2"
-    async "^3.2.4"
-    ethereum-cryptography "^1.1.2"
 
 "@ethersproject/abi@5.6.1", "@ethersproject/abi@^5.6.0":
   version "5.6.1"
@@ -1415,21 +1401,21 @@
   dependencies:
     browser-headers "^0.4.1"
 
-"@injectivelabs/chain-api@1.8.3":
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/chain-api/-/chain-api-1.8.3.tgz#9ff948712018347c54453426e6eaa0c8e1edb2f2"
-  integrity sha512-BIg87F9BTA5njxtvOkEOIHl/gpmsqnFpHJm1SrN6IHUsW97/Zj3jXdYOy9p4WCfgxC2VZC/5IOPnwyrLwSyCWg==
+"@injectivelabs/chain-api@1.9.4":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/chain-api/-/chain-api-1.9.4.tgz#cb4c1b09d2fb12840514a65637b5ecc504485fc7"
+  integrity sha512-n74J6kIcvIjAK0JcWmtXwy+9VvKKTPgMPI/oRWoTt5SwtfUyb7GYKFg0xPV34APuhLkCqIX6B5VD2p2YTZqMMA==
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     google-protobuf "^3.13.0"
 
-"@injectivelabs/exceptions@^1.0.32":
-  version "1.0.32"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/exceptions/-/exceptions-1.0.32.tgz#250da86b378b07855e81abf2ef4c908a856be78b"
-  integrity sha512-g+7UIoVL6v5OIdRrJSWLoyfHYIpey3BpWwxeUpFwXyRBkzalHPkVyYnmx1twOJd6lZyhfZWG0k9M5PcJBsrDIw==
+"@injectivelabs/exceptions@^1.0.45":
+  version "1.0.45"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/exceptions/-/exceptions-1.0.45.tgz#18b254806efeea4fea11e6d59ab44796d80436f3"
+  integrity sha512-fzoCxeF8vfpoyajS0sA+qeJy+CL6dUWtpnZS7Nt4bC51EgO6cxwKbMtBD8Pob7plwUlqEWr8FrFWAysfXyOopQ==
   dependencies:
     "@improbable-eng/grpc-web" "^0.15.0"
-    "@injectivelabs/ts-types" "^1.0.18"
+    "@injectivelabs/ts-types" "^1.0.28"
     http-status-codes "^2.2.0"
     link-module-alias "^1.2.0"
     shx "^0.3.2"
@@ -1442,14 +1428,14 @@
     "@improbable-eng/grpc-web" "^0.14.0"
     google-protobuf "^3.14.0"
 
-"@injectivelabs/networks@^1.0.55":
-  version "1.0.55"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/networks/-/networks-1.0.55.tgz#b6b49a9dadbcd447ad1df65a859a33f709d22d38"
-  integrity sha512-68KF4GuKC+jIfq3LHNz8YIU0BWySymcs+/20F9zkaeBD/jUw7ywLR1OICdV3lp9RWV6eeNK8207FcTHRvun0Jg==
+"@injectivelabs/networks@^1.0.73":
+  version "1.0.73"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/networks/-/networks-1.0.73.tgz#92560ac35e31c518fdf6dc4e4454a4914fde2301"
+  integrity sha512-m9SzmO1cr0OG/Hjxj/KN5JZDBIgIPihIhkhvu2zavvkiQdRqyCuvXM/K/Mj/buP/V9awTjSaytISybjGVq8v4w==
   dependencies:
-    "@injectivelabs/exceptions" "^1.0.32"
-    "@injectivelabs/ts-types" "^1.0.18"
-    "@injectivelabs/utils" "^1.0.47"
+    "@injectivelabs/exceptions" "^1.0.45"
+    "@injectivelabs/ts-types" "^1.0.28"
+    "@injectivelabs/utils" "^1.0.63"
     link-module-alias "^1.2.0"
     shx "^0.3.2"
 
@@ -1461,10 +1447,10 @@
     "@improbable-eng/grpc-web" "^0.14.0"
     google-protobuf "^3.14.0"
 
-"@injectivelabs/sdk-ts@^1.0.327":
-  version "1.0.327"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/sdk-ts/-/sdk-ts-1.0.327.tgz#7528450166afcfd61e0eb9c1ec5da78b7acc824e"
-  integrity sha512-kE8YccOCqwDN0EWZXxx/YAgJDwOE0UfuHVjecLvI1ahXwURgEm74+n45kYdqhNU3Ai2LdXANbhEcXCfZpRXaog==
+"@injectivelabs/sdk-ts@^1.0.367":
+  version "1.0.367"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/sdk-ts/-/sdk-ts-1.0.367.tgz#fe3808a681a6272b248ffcb3d778ce794d69a9b2"
+  integrity sha512-JAOgv8ytzhsgEe8g+jrJWYE3O3Wd3/jp09C0boBMwdRyLsa4JNVmcvjEkJtweBo7NaSxYJKF9fGy7fDGZ5DICw==
   dependencies:
     "@apollo/client" "^3.5.8"
     "@cosmjs/amino" "^0.29.5"
@@ -1475,15 +1461,15 @@
     "@improbable-eng/grpc-web" "^0.15.0"
     "@improbable-eng/grpc-web-node-http-transport" "^0.15.0"
     "@improbable-eng/grpc-web-react-native-transport" "^0.15.0"
-    "@injectivelabs/chain-api" "1.8.3"
-    "@injectivelabs/exceptions" "^1.0.32"
+    "@injectivelabs/chain-api" "1.9.4"
+    "@injectivelabs/exceptions" "^1.0.45"
     "@injectivelabs/indexer-api" "1.0.32-rc"
-    "@injectivelabs/networks" "^1.0.55"
+    "@injectivelabs/networks" "^1.0.73"
     "@injectivelabs/ninja-api" "^1.0.11"
-    "@injectivelabs/token-metadata" "^1.0.91"
-    "@injectivelabs/ts-types" "^1.0.18"
-    "@injectivelabs/utils" "^1.0.47"
-    "@metamask/eth-sig-util" "^5.0.1"
+    "@injectivelabs/token-metadata" "^1.0.110"
+    "@injectivelabs/ts-types" "^1.0.28"
+    "@injectivelabs/utils" "^1.0.63"
+    "@metamask/eth-sig-util" "^4.0.0"
     "@types/google-protobuf" "^3.15.5"
     axios "^0.27.2"
     bech32 "^2.0.0"
@@ -1503,13 +1489,13 @@
     shx "^0.3.2"
     snakecase-keys "^5.4.1"
 
-"@injectivelabs/token-metadata@^1.0.91":
-  version "1.0.91"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/token-metadata/-/token-metadata-1.0.91.tgz#7b2b15b4854dc1406088b38ac4a8ddd6c8d507b1"
-  integrity sha512-YZBy6lKCv2O9tqmBy4PTC7zOynY8Derj5X6M18HLYLJnUEkiA1NTZ1xdpuR32bvNE1kdHEo2z2AUgjMoBe9clw==
+"@injectivelabs/token-metadata@^1.0.110":
+  version "1.0.110"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/token-metadata/-/token-metadata-1.0.110.tgz#164752412b3fb8885b95230aa41fbe166e641f9e"
+  integrity sha512-mTdOlwQqxxw3UebPGHjZJFWKaxOIvPov03u+CiaDIiuaZwQc1HMlBtAEoClmvvQeNwjjpDqobNcZZ0ih7w2qJQ==
   dependencies:
-    "@injectivelabs/networks" "^1.0.55"
-    "@injectivelabs/ts-types" "^1.0.18"
+    "@injectivelabs/networks" "^1.0.73"
+    "@injectivelabs/ts-types" "^1.0.28"
     "@types/lodash.values" "^4.3.6"
     copyfiles "^2.4.1"
     jsonschema "^1.4.0"
@@ -1518,23 +1504,34 @@
     lodash.values "^4.3.0"
     shx "^0.3.2"
 
-"@injectivelabs/ts-types@^1.0.18":
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/ts-types/-/ts-types-1.0.18.tgz#2def1f4a2cb01aa022dcc6d244754195454a7fc9"
-  integrity sha512-fffgHjSmssLXBiI6Z/K7JuBOKTnsDm3h6ysQ5KRasmSY3NDuMCAQ5URForvdOQ38SKvhMquxQus5a+tZIWnHfg==
+"@injectivelabs/token-utils@^1.0.67":
+  version "1.0.67"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/token-utils/-/token-utils-1.0.67.tgz#9230255b8225a59e8743774b5dcf064cd71389e5"
+  integrity sha512-acJeQ1gZYqaTRvGA4UFJ4eLyjKSD4/qzg1u6vvscaprz2caEgHAH4DtQlJDomze0tf4c3hD0JyVx65V17pAiMw==
+  dependencies:
+    "@injectivelabs/exceptions" "^1.0.45"
+    "@injectivelabs/utils" "^1.0.63"
+    link-module-alias "^1.2.0"
+    shx "^0.3.2"
+
+"@injectivelabs/ts-types@^1.0.28":
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/ts-types/-/ts-types-1.0.28.tgz#67b99a47d85b716afda4fef6de98ab94e3281e9e"
+  integrity sha512-QnUi6gP/H3Yn51onKl6dVjuokXdkygpj0cpfiyvOfuMXdJ1ScF2uOTwMxmQpjuDScBqZYEIOdkgskuBmoMpTSA==
   dependencies:
     link-module-alias "^1.2.0"
     shx "^0.3.2"
 
-"@injectivelabs/utils@^1.0.47":
-  version "1.0.47"
-  resolved "https://registry.yarnpkg.com/@injectivelabs/utils/-/utils-1.0.47.tgz#7850aaed318cc723c9087c42b5b4e53eeb2cc8d6"
-  integrity sha512-UDbqFDwn1KU+0M1pIr5UR4wTyXuU/NiakcizKiBFstlLdZkqzX3imklwFx7XV7IJ7xZt5EbyCxf7VLj6h/MfCA==
+"@injectivelabs/utils@^1.0.63":
+  version "1.0.63"
+  resolved "https://registry.yarnpkg.com/@injectivelabs/utils/-/utils-1.0.63.tgz#263e60edf4e2e0980dc14ce4b242d514b7c13ac2"
+  integrity sha512-vdCXDeuBU7R7i4j3eCSkTE5VppGQgSjeWU4zvaiHDpemHX34lzGK7SS1v81Ey+uaW5m6U/xV7kzkFUe7fd6+jg==
   dependencies:
-    "@injectivelabs/exceptions" "^1.0.32"
-    "@injectivelabs/ts-types" "^1.0.18"
+    "@injectivelabs/exceptions" "^1.0.45"
+    "@injectivelabs/ts-types" "^1.0.28"
     axios "^0.21.1"
     bignumber.js "^9.0.1"
+    http-status-codes "^2.2.0"
     link-module-alias "^1.2.0"
     shx "^0.3.2"
     snakecase-keys "^5.1.2"
@@ -1754,32 +1751,21 @@
     prompts "^2.3.2"
     tslib "2.0.1"
 
-"@metamask/eth-sig-util@^5.0.1":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@metamask/eth-sig-util/-/eth-sig-util-5.0.2.tgz#c518279a6e17a88135a13d53a0b970f145ff8bce"
-  integrity sha512-RU6fG/H6/UlBol221uBkq5C7w3TwLK611nEZliO2u+kO0vHKGBXnIPlhI0tzKUigjhUeOd9mhCNbNvhh0LKt9Q==
+"@metamask/eth-sig-util@^4.0.0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@metamask/eth-sig-util/-/eth-sig-util-4.0.1.tgz#3ad61f6ea9ad73ba5b19db780d40d9aae5157088"
+  integrity sha512-tghyZKLHZjcdlDqCA3gNZmLeR0XvOE9U1qoQO9ohyAZT6Pya+H9vkBPcsyXytmYLNgVoin7CKCmweo/R43V+tQ==
   dependencies:
-    "@ethereumjs/util" "^8.0.0"
-    bn.js "^4.11.8"
-    ethereum-cryptography "^1.1.2"
+    ethereumjs-abi "^0.6.8"
+    ethereumjs-util "^6.2.1"
     ethjs-util "^0.1.6"
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
-"@noble/hashes@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.2.tgz#e9e035b9b166ca0af657a7848eb2718f0f22f183"
-  integrity sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA==
-
-"@noble/hashes@^1", "@noble/hashes@^1.0.0", "@noble/hashes@~1.1.1":
+"@noble/hashes@^1", "@noble/hashes@^1.0.0":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.5.tgz#1a0377f3b9020efe2fae03290bd2a12140c95c11"
   integrity sha512-LTMZiiLc+V4v1Yi16TD6aX2gmtKszNye0pQgbaLqkvhIqP7nVsSaJsWloGQjJfJ8offaoP5GtX3yY5swbcJxxQ==
-
-"@noble/secp256k1@1.6.3", "@noble/secp256k1@~1.6.0":
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.6.3.tgz#7eed12d9f4404b416999d0c87686836c4c5c9b94"
-  integrity sha512-T04e4iTurVy7I8Sw4+c5OSN9/RkPlo1uKxAomtxQNLq8j1uPAqnsqG1bqvY3Jv7c13gyr6dui0zmh/I3+f/JaQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1854,28 +1840,6 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
-
-"@scure/base@~1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.1.tgz#ebb651ee52ff84f420097055f4bf46cfba403938"
-  integrity sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA==
-
-"@scure/bip32@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@scure/bip32/-/bip32-1.1.0.tgz#dea45875e7fbc720c2b4560325f1cf5d2246d95b"
-  integrity sha512-ftTW3kKX54YXLCxH6BB7oEEoJfoE2pIgw7MINKAs5PsS6nqKPuKk1haTF/EuHmYqG330t5GSrdmtRuHaY1a62Q==
-  dependencies:
-    "@noble/hashes" "~1.1.1"
-    "@noble/secp256k1" "~1.6.0"
-    "@scure/base" "~1.1.0"
-
-"@scure/bip39@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@scure/bip39/-/bip39-1.1.0.tgz#92f11d095bae025f166bef3defcc5bf4945d419a"
-  integrity sha512-pwrPOS16VeTKg98dYXQyIjJEcWfz7/1YJIwxUEPFfQPtc86Ym/1sVgQ2RLoD43AazMk2l/unK4ITySSpW2+82w==
-  dependencies:
-    "@noble/hashes" "~1.1.1"
-    "@scure/base" "~1.1.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -2412,11 +2376,6 @@ astral-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
-
-async@^3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
-  integrity sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -3457,16 +3416,6 @@ ethereum-cryptography@^0.1.3:
     secp256k1 "^4.0.1"
     setimmediate "^1.0.5"
 
-ethereum-cryptography@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ethereum-cryptography/-/ethereum-cryptography-1.1.2.tgz#74f2ac0f0f5fe79f012c889b3b8446a9a6264e6d"
-  integrity sha512-XDSJlg4BD+hq9N2FjvotwUET9Tfxpxc3kWGE2AqUG5vcbeunnbImVk3cj6e/xT3phdW21mE8R5IugU4fspQDcQ==
-  dependencies:
-    "@noble/hashes" "1.1.2"
-    "@noble/secp256k1" "1.6.3"
-    "@scure/bip32" "1.1.0"
-    "@scure/bip39" "1.1.0"
-
 ethereumjs-abi@^0.6.8:
   version "0.6.8"
   resolved "https://registry.yarnpkg.com/ethereumjs-abi/-/ethereumjs-abi-0.6.8.tgz#71bc152db099f70e62f108b7cdfca1b362c6fcae"
@@ -3486,7 +3435,7 @@ ethereumjs-util@7.1.5, ethereumjs-util@^7.1.5:
     ethereum-cryptography "^0.1.3"
     rlp "^2.2.4"
 
-ethereumjs-util@^6.0.0:
+ethereumjs-util@^6.0.0, ethereumjs-util@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/ethereumjs-util/-/ethereumjs-util-6.2.1.tgz#fcb4e4dd5ceacb9d2305426ab1a5cd93e3163b69"
   integrity sha512-W2Ktez4L01Vexijrm5EB6w7dg4n/TgpoYU4avuT5T3Vmnw/eCRtiBrJfQYS/DCSvDIOLn2k57GcHdeBcgVxAqw==
