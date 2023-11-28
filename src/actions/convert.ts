@@ -1,4 +1,9 @@
-import { getEthereumAddress, getInjectiveAddress } from "@injectivelabs/sdk-ts";
+import {
+  PrivateKey,
+  PublicKey,
+  getEthereumAddress,
+  getInjectiveAddress,
+} from "@injectivelabs/sdk-ts";
 import { AddressConverter } from "../types/index.js";
 import { validateAddress } from "../utils/validations.js";
 
@@ -93,6 +98,46 @@ export const subaccountToEth = (address: string): string => {
   return convert(address);
 };
 
+export const publicKeyToInj = (pubKey: string) => {
+  const convert = (pubKey: string) => {
+    const publicKey = PublicKey.fromBase64(pubKey);
+
+    return publicKey.toAddress().toBech32();
+  };
+
+  return convert(pubKey);
+};
+
+export const privateKeyToInj = (pk: string) => {
+  const convert = (pk: string) => {
+    const privateKey = PrivateKey.fromHex(pk);
+
+    return privateKey.toAddress().toBech32();
+  };
+
+  return convert(pk);
+};
+
+export const privateKeyToPubKey = (pk: string) => {
+  const convert = (pk: string) => {
+    const privateKey = PrivateKey.fromHex(pk);
+
+    return privateKey.toPublicKey().toBase64();
+  };
+
+  return convert(pk);
+};
+
+export const seedPhaseToInj = (mnemonic: string) => {
+  const convert = (mnemonic: string) => {
+    const privateKey = PrivateKey.fromMnemonic(mnemonic);
+
+    return privateKey.toAddress().toBech32();
+  };
+
+  return convert(mnemonic);
+};
+
 export const handleConvertAddress = (
   converter: AddressConverter,
   address?: string
@@ -114,6 +159,14 @@ export const handleConvertAddress = (
       return subaccountToEth(address);
     case AddressConverter.SubaccountToInj:
       return subaccountToInj(address);
+    case AddressConverter.PublicKeyToAddress:
+      return publicKeyToInj(address);
+    case AddressConverter.PrivateKeyToAddress:
+      return privateKeyToInj(address);
+    case AddressConverter.PrivateKeyToPublicKey:
+      return privateKeyToPubKey(address);
+    case AddressConverter.SeedPhaseToAddress:
+      return seedPhaseToInj(address);
     default:
       throw new Error(`The ${converter} converter is not available`);
   }

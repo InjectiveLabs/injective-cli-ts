@@ -1,7 +1,6 @@
 export enum Action {
   convert = "convert",
   query = "query",
-  calculator = "calculator",
 }
 
 export enum AddressConverter {
@@ -11,16 +10,13 @@ export enum AddressConverter {
   EthToSubaccount = "EthToSubaccount",
   SubaccountToInj = "SubaccountToInj",
   SubaccountToEth = "SubaccountToEth",
+  SeedPhaseToAddress = "SeedPhaseToAddress",
+  PublicKeyToAddress = "PublicKeyToAddress",
+  PrivateKeyToAddress = "PrivateKeyToAddress",
+  PrivateKeyToPublicKey = "PrivateKeyToPublicKey",
 }
 
 export enum Query {
-  PortfolioAndBankValue = "PortfolioAndBankValue",
-  BankValue = "BankValue",
-  PortfolioValue = "PortfolioValue",
-}
-
-export enum Calculator {
-  PortfolioAndBankValue = "PortfolioAndBankValue",
-  BankValue = "BankValue",
-  PortfolioValue = "PortfolioValue",
+  Portfolio = "Portfolio",
+  BankBalances = "BankBalances",
 }

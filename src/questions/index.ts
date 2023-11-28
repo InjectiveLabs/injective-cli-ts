@@ -1,4 +1,4 @@
-import { Action, AddressConverter, Calculator, Query } from "../types/index.js";
+import { Action, AddressConverter, Query } from "../types/index.js";
 
 export const INQUIRER_MAIN_PROMPT = {
   actions: [
@@ -18,17 +18,6 @@ export const INQUIRER_QUERY_PROMPT = {
       name: Action.query,
       message: "Choose the query you want to perform",
       choices: Object.values(Query),
-    },
-  ],
-};
-
-export const INQUIRER_CALCULATOR_PROMPT = {
-  calculator: [
-    {
-      type: "list",
-      name: Action.calculator,
-      message: "Choose the calculation you want to perform",
-      choices: Object.values(Calculator),
     },
   ],
 };
