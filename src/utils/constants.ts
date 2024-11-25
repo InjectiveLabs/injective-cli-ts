@@ -1,10 +1,10 @@
 import { getNetworkEndpoints, Network } from "@injectivelabs/networks";
-import { TokenStatic, TokenFactoryStatic } from "@injectivelabs/sdk-ts";
-import tokens from "../data/tokens.json"; // json file downloaded from step 1
+// import { TokenStatic, TokenFactoryStatic } from "@injectivelabs/sdk-ts";
+// import tokens from "../data/tokens.json" assert { type: "json" };
 
-export const tokenFactoryStatic = new TokenFactoryStatic(
-  tokens as TokenStatic[]
-);
+// export const tokenFactoryStatic = new TokenFactoryStatic(
+//   tokens as TokenStatic[]
+// );
 
 export const NETWORK = Network.MainnetSentry;
 export const ENDPOINTS = getNetworkEndpoints(NETWORK);
