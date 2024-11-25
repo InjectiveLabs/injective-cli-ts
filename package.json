@@ -1,6 +1,6 @@
 {
   "name": "@injectivelabs/inj-ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple CLI tool for Injective and its services.",
   "license": "Apache-2.0",
   "author": "@InjectiveLabs",
